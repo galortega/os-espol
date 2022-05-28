@@ -3,8 +3,8 @@ all: build build/mycat
 build:
 	mkdir -p build
 
-build/mycat: main.cpp 
-	 g++ -g -Wall -o build/mycat main.cpp
+build/mycat: main.c 
+	 g++ -g -Wall -o build/mycat main.c
 
 clean:
 	 rm build/*
