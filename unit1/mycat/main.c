@@ -62,5 +62,5 @@ int myCatfd(int ifd, int ofd)
             return -1; // had to include stdlib.h to get EXIT_FAILURE
         }
     }
-    return (nbytes < 0) ? -1 : 0;
+    return (nbytes < 0) ? -1 : 0; // -1 if error, 0 if success
 }
